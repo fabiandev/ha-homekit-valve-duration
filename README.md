@@ -61,6 +61,8 @@ homekit:
 > Use at your own risk! This is a POC and intended for testing purposes and developers who want to contribute to the Home Assistant core implementation.
 
 To test this POC, you may 
-1. Copy the `homekit` folder into your `<config>/custom_components` folder
-2. Adjust your Homekit configuration (see example below)
+1. Copy the `homekit` folder from this repository into your `<config>/custom_components` folder in Home Assistant
+2. Adjust your HomeKit configuration (see example)
 3. Restart Home Assistant
+
+This will load this fork instead of the built in homekit integration. Turn on debug logging for troubleshooting.
