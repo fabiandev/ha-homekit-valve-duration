@@ -4,12 +4,21 @@ This is a fork of the Home Assistant core component [`homekit`](https://github.c
 
 Based on the idea of https://github.com/f-perna/homekit-valve
 
+## Features
+
+- **Set default duration** in HomeKit, synced with a state in Home Assistant
+- **Display remaining time** based on an end date, to be provided by a sensor in Home Assistant
+
+<img width="300" alt="IMG_4092" src="https://github.com/user-attachments/assets/1cf044f6-910e-4e11-95a8-8e108e705ebe" />
+<img width="300" alt="IMG_4093" src="https://github.com/user-attachments/assets/7855e5c1-1539-4200-b85d-50a6464bb3f8" />
+
+
 ## Setup
 
 > Use at your own risk! This is a POC and intended for testing purposes for developers who want to contribute to the Home Assistant core implementation.
 
 To test this POC, you may 
-1. Copy the `homekit` folder into your `<config>/custom_components` folger
+1. Copy the `homekit` folder into your `<config>/custom_components` folder
 2. Adjust your Homekit configuration (see example below)
 3. Restart Home Assistant
 
