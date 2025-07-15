@@ -2,6 +2,8 @@
 
 This is a fork of the Home Assistant core component [`homekit`](https://github.com/home-assistant/core/tree/dev/homeassistant/components/homekit)
 
+Based on the idea of https://github.com/f-perna/homekit-valve
+
 ## Setup
 
 > Use at your own risk! This is a POC and intended for testing purposes for developers who want to contribute to the Home Assistant core implementation.
