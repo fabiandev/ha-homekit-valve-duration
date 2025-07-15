@@ -9,8 +9,8 @@ Based on the idea of https://github.com/f-perna/homekit-valve
 > Use at your own risk! This is a POC and intended for testing purposes for developers who want to contribute to the Home Assistant core implementation.
 
 To test this POC, you may 
-1. Copy the `homekit` foldet into your `<config>/custom_components` folger
-2. Adjust your Homekit configuration
+1. Copy the `homekit` folder into your `<config>/custom_components` folger
+2. Adjust your Homekit configuration (see example below)
 3. Restart Home Assistant
 
 ## Linked entities
@@ -18,7 +18,15 @@ To test this POC, you may
 Configuration|Type|Description
 -|-|-|
 linked_valve_duration|`input_number`|This entity can be updated in Home Assistant, or via HomeKit. The state is synced in both directions.
-linked_valve_end_time|`sensor`|A sensor with `device_class` `timestamp`, for calculating the end time. State must be managed in Home Assistant, value will not be updated by HomeKit.
+linked_valve_end_time|`sensor`|A sensor with `device_class` `timestamp`, for calculating the remaining time. State must be managed in Home Assistant, value will not be updated by HomeKit. The correct end time should be set as soon as possible after the switch or valve is activated. If not provided immediately, the default duration set in `linked_valve_duration` will be used as initial countdown.
+
+
+
+## Supported entities
+
+The linked entities can be added to a
+- **Switch** of type `faucet`, `shower`, `sprinkler`, or `valve`
+- **Valve**
 
 ## Example
 
