@@ -24,7 +24,7 @@ To add support for the default run time and remaining duration characteristics, 
 
 Entity Config |Type|Description
 -|-|-|
-linked_valve_duration|`input_number`|This entity can be updated in Home Assistant, or via HomeKit. The state is synced in both directions.
+linked_valve_duration|`input_number`|This entity can be updated in Home Assistant, or via HomeKit. The state is synced in both directions. `min`, `max`, and `step` configuration will be used for setting `minValue`, `maxValue`, and `minStep` of the HAP characteristics respectively.
 linked_valve_end_time|`sensor`|A sensor with `device_class` `timestamp`, for calculating the remaining time. State must be managed in Home Assistant, value will not be updated by HomeKit. The correct end time should be set as soon as possible after the switch or valve is activated. If not provided immediately, the default duration set in `linked_valve_duration` will be used as initial countdown.
 
 ## Helper entities
