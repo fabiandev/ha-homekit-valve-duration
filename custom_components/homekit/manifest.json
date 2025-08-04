@@ -15,5 +15,5 @@
     "base36==0.1.1"
   ],
   "zeroconf": ["_homekit._tcp.local."],
-  "version": "1.0.0-homekit-valve-duration.1"
+  "version": "1.0.0-homekit-valve-duration.2"
 }
