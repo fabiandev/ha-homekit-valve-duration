@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> This feature has been merged into the [Home Assistant](https://github.com/home-assistant/core) project.
+> See the official [HomeKit integration documentation](https://www.home-assistant.io/integrations/homekit/) for further reference.
+> - https://github.com/home-assistant/core/pull/149698
+> - https://github.com/home-assistant/core/pull/150273
+
 # ha-homekit-valve-duration
 
 This is a fork of the Home Assistant core component [`homekit`](https://github.com/home-assistant/core/tree/dev/homeassistant/components/homekit)
